@@ -13,6 +13,6 @@
             <p><strong>Цена:</strong> {{ number_format($product->price, 2, ',', ' ') }} ₽</p>
         </div>
 
-        <a href="{{ route('products.index') }}" class="btn btn-success">Назад</a>
+        <a href="{{ url()->previous() }}" class="btn btn-success">Назад</a>
     </div>
 @endsection
